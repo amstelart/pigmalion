@@ -5448,6 +5448,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 18px;
   font-weight: 500;
   margin-right: 40px;
+  font-weight: 600;
 }
 .page-header .header-info__contacts .item svg {
   fill: #11b89e;
@@ -5511,13 +5512,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-07102649960175431.png);
+  background-image: url(../img/sprite-07060639142653162.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-07102649960175431.png);
+  background-image: url(../img/sprite-07060639142653162.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6068,6 +6069,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .card-service .card-body .card-title {
   margin: 0;
+  font-weight: 600;
 }
 .section-team {
   background: #e5f0f7;
