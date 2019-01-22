@@ -1,0 +1,75 @@
+// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-header {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+
+  .top-header {
+    padding: 18px 0;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    &__contacts {
+      .item {
+        color: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 40px;
+
+        svg {
+          fill: #11b89e;
+          margin-right: 10px;
+        }
+
+        &:not(:first-child) {
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+    &__sign-up {}
+  }
+
+  .navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__search {
+    .search-form__input {
+      background-image: svg-load('../blocks/sprite-svg/svg/icon-search.svg');
+      background-repeat: no-repeat;
+      background-position: 14px 50%;
+      border:none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .btn {
+      display: none;
+    }
+  }
+}

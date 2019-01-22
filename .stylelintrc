@@ -1,0 +1,6 @@
+{
+  "syntax": "scss",
+  # http://stylelint.io/user-guide/rules/
+  "rules": {
+  }
+}
