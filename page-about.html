@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Пигмалион</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="top-header">
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="index.html" class="logo">
+          <h1 class="logo__text">Пигмалион</h1>
+          <p class="logo__text-sub">Медицинский центр</p>
+        </a>
+        <div class="header-info">
+          <div class="header-info__contacts">
+            <a href="tel:+74712529965" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
+            <a href="tel:+78002009534" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
+          </div>
+          <div class="header-info__sign-up">
+            <a class="btn btn-outline-secondary" href="#">Онлайн-запись</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav directions-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><div class="burger"><span></span></div>Нарпавления</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="page-price.html">Цены</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-team.html">Специалисты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-reviews.html">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-gallery.html">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-about.html">О клинике</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <form class="form-inline search-form page-header__search my-2 my-lg-0">
+          <input class="form-control mr-sm-2 search-form__input" type="search" placeholder="Поиск услуг" aria-label="Search">
+          <button class="btn my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="page-content" role="main">
+
+    <!-- Start content__wrap -->
+    <div class="page-content__wrap">
+      <div class="container">
+        <nav class="breadcrumb-wrap">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">О клинике</li>
+          </ol>
+        </nav>
+        <h1 class="page-heading">О клинике</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="figure">
+              <img src="img/img-content-01.jpg" class="figure-img img-fluid rounded" alt="...">
+              <figcaption class="figure-caption">Андрей Никулин - Главный врач медицинского центра «Пигмалион»</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <img src="img/img-content-02.jpg" class="figure-img img-fluid rounded" alt="...">
+              <figcaption class="figure-caption">Специалисты медицинского центра «Пигмалион»</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p>Оглядываясь назад, в 2000 год, я вспоминаю, как решил вместе с женой рискнуть, открыв маленький  косметический кабинет на улице Дзержинского в помещении школы, где в аренду взял 20 квадратов. </p>
+        <p>В тот момент работали вдвоем: жена-косметолог и я массажист. Через год мы расширили помещение и добавили новинку для Курска, татуировку и пирсинг. После этого о нас узнали в молодежной среде города, да и области.
+        Поскольку число клиентов увеличивалось, а мастеров салона оставалось столько же, пришлось взять еще одного косметолога. Как-то летом в салон зашел 18-летний парень, как оказалось мастер татуажа, который проработав у нас несколько месяцев, уехал в столицу, и появилась вакансия, которую пришлось заполнить мне самому, дело было необычное, интересное, и к тому же требовало наличия медицинского образования.  Число клиентов росло, а помещение оставалось таким же, и уже было некомфортно, когда в холле встречались женщины-клиентки косметологов и неформалы, интересующиеся тату.</p>
+        <p>С течением времени росло мастерство специалистов, приобреталось современное оборудование, появлялись новые клиенты в обоих салонах. Приходили и уходили мастера, о некоторых вспоминаешь с улыбкой, были и разочарования и ошибки. Но оставалось и остается одно — желание выполнять свою работу профессионально, с максимальной отдачей. А на сколько это нам удается — судить вам, дорогие наши и не наши клиенты. Добро пожаловать на наш сайт.</p>
+        <p>С уважением, Андрей Никулин.</p>
+      </div>
+    </div>
+    <!-- End content__wrap -->
+
+    <!-- Start Category -->
+    <section class="section">
+      <div class="category-wrap">
+        <a href="#" class="category-card">
+          <img src="img/category-img-01.jpg" alt="">
+          <h2 class="category-title">Предметы интерьера</h2>
+        </a>
+        <a href="#" class="category-card">
+          <img src="img/category-img-02.jpg" alt="">
+          <h2 class="category-title">Посуда</h2>
+        </a>
+        <a href="#" class="category-card">
+          <img src="img/category-img-03.jpg" alt="">
+          <h2 class="category-title">Текстиль</h2>
+        </a>
+        <a  href="#" class="category-card">
+          <img src="img/category-img-04.jpg" alt="">
+          <h2 class="category-title">Пухово-перовые изделия</h2>
+        </a>
+      </div>
+    </section>
+    <!-- End Category -->
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <a href="index.html" class="logo">
+            <h1 class="logo__text">Пигмалион</h1>
+            <p class="logo__text-sub">Медицинский центр</p>
+          </a>
+          <nav class="nav footer-nav">
+            <a class="nav-link active" href="#">Косметология</a>
+            <a class="nav-link" href="#">Лор</a>
+            <a class="nav-link" href="#">Хирургия</a>
+            <a class="nav-link" href="#">Онкология</a>
+            <a class="nav-link" href="#">Травмотология и ортопедия</a>
+            <a class="nav-link" href="#">Перманентный макияж</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <p>Медицинский центр «Пимгмалион» 2018</p>
+          <p>Разработано в <a href="#">Showbiz</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/ofi.js"></script>
+  <script src="js/isMobile.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
