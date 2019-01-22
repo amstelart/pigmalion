@@ -5497,13 +5497,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-0867308050057995.png);
+  background-image: url(../img/sprite-06613222601600246.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-0867308050057995.png);
+  background-image: url(../img/sprite-06613222601600246.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6072,6 +6072,12 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 2px;
   margin-bottom: 15px;
   position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url("../img/team-card-bg.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% -500%;
 }
 .team-card__img img {
   position: absolute;
@@ -6084,6 +6090,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .team-card__body h5 {
   color: #1b66d6;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .team-card__body p {
   color: #000;
@@ -6094,6 +6102,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .team-card:hover .team-card__img, .team-card:focus .team-card__img {
   background: #236bd7;
+  background-image: url("../img/team-card-bg.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .team-card:hover .team-card__body h5, .team-card:focus .team-card__body h5 {
   color: #10a28b;
