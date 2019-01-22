@@ -5456,6 +5456,20 @@ a.text-dark:hover, a.text-dark:focus {
 .page-header .header-info__contacts .item:hover, .page-header .header-info__contacts .item:focus {
   text-decoration: none;
 }
+.page-header .header-info__sign-up .btn {
+  color: #000;
+  font-weight: 700;
+}
+.page-header .header-info__sign-up .btn svg {
+  margin-right: 10px;
+  fill: #11b89e;
+}
+.page-header .header-info__sign-up .btn:hover, .page-header .header-info__sign-up .btn:focus {
+  color: #fff;
+}
+.page-header .header-info__sign-up .btn:hover svg, .page-header .header-info__sign-up .btn:focus svg {
+  fill: #fff;
+}
 .page-header .navbar {
   padding-left: 30px;
   padding-right: 30px;
@@ -5497,13 +5511,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06613222601600246.png);
+  background-image: url(../img/sprite-07102649960175431.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06613222601600246.png);
+  background-image: url(../img/sprite-07102649960175431.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
