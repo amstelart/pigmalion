@@ -47,7 +47,7 @@
 
   <header class="page-header">
     <div class="top-header">
-      <div class="container-fluid d-flex justify-content-between">
+      <div class="container-fluid">
         <a href="index.html" class="logo">
           <h1 class="logo__text">Пигмалион</h1>
           <p class="logo__text-sub">Медицинский центр</p>
@@ -70,12 +70,18 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav directions-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><div class="burger"><span></span></div>Нарпавления</a>
-          </li>
-        </ul>
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown dropdown-direction">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownDirectionMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="dropdown-burger"><span></span></div>
+              Нарпавления
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownDirectionMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="page-price.html">Цены</a>
           </li>
@@ -83,16 +89,16 @@
             <a class="nav-link" href="page-team.html">Специалисты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page-reviews.html">Отзывы</a>
+            <a class="nav-link" href="#">Отзывы</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page-gallery.html">Галерея</a>
+            <a class="nav-link" href="#">Галерея</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="page-about.html">О клинике</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page-contacts.html">Контакты</a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
         <form class="form-inline search-form page-header__search my-2 my-lg-0">
@@ -123,7 +129,7 @@
         <div class="row">
           <div class="col-xl-9">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Поиск по услугам" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <input type="text" class="form-control search-form__input" placeholder="Поиск по услугам" aria-label="Recipient's username" aria-describedby="button-addon2">
               <select class="custom-select" id="inputGroupSelect01">
                 <option selected>Выбор направления</option>
                 <option value="1">One</option>
