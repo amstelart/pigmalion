@@ -1219,7 +1219,7 @@ textarea.form-control {
 .was-validated .custom-select:valid, .custom-select.is-valid {
   border-color: #28a745;
   padding-right: 4.25rem;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") no-repeat center right 2rem/1.5rem 1.5rem;
+  background: url("../img/icon-arrow-bottom.svg") no-repeat right 1rem center/14px 8px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") no-repeat center right 2rem/1.5rem 1.5rem;
 }
 .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
   border-color: #28a745;
@@ -1325,7 +1325,7 @@ textarea.form-control {
 .was-validated .custom-select:invalid, .custom-select.is-invalid {
   border-color: #dc3545;
   padding-right: 4.25rem;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") no-repeat center right 2rem/1.5rem 1.5rem;
+  background: url("../img/icon-arrow-bottom.svg") no-repeat right 1rem center/14px 8px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") no-repeat center right 2rem/1.5rem 1.5rem;
 }
 .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
   border-color: #dc3545;
@@ -2569,7 +2569,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #000;
   vertical-align: middle;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px;
+  background: url("../img/icon-arrow-bottom.svg") no-repeat right 1rem center/14px 8px;
   background-color: #fff;
   border: 1px solid #afc6d5;
   border-radius: 0.25rem;
@@ -2580,8 +2580,8 @@ input[type="button"].btn-block {
 .custom-select:focus {
   border-color: #81adef;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(129, 173, 239, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(129, 173, 239, 0.5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .custom-select:focus::-ms-value {
   color: #000;
@@ -3675,7 +3675,7 @@ a.badge-dark:hover, a.badge-dark:focus {
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #afc6d5;
 }
 .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
@@ -5508,13 +5508,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-07196096007567341.png);
+  background-image: url(../img/sprite-06294606277283259.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-07196096007567341.png);
+  background-image: url(../img/sprite-06294606277283259.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6348,9 +6348,13 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #afc6d5;
   margin-bottom: 20px;
 }
+.card-price .card-body {
+  border-top: 1px solid #afc6d5;
+}
 .card-price .card-header {
   border-color: #afc6d5;
   background-color: #fff;
+  border-bottom: 0 !important;
 }
 .card-price .card-header .card-title {
   text-transform: uppercase;
@@ -6400,16 +6404,62 @@ a.text-dark:hover, a.text-dark:focus {
   border-right: 0;
   border: none;
 }
-.card-price--nested:last-child {
-  margin-bottom: -1px;
+.card-price--nested:not(:last-child) {
+  border-bottom: 1px solid #afc6d5;
 }
 .card-price--nested .card-header {
+  border-radius: 0 !important;
   background-color: #e5f0f7;
+  border: none;
 }
 .card-price--nested .card-header .card-title {
   font-size: 16px;
   text-transform: inherit;
   text-align: left;
+}
+.card-services {
+  border-color: #afc6d5;
+  margin-bottom: 20px;
+}
+.card-services .card-body {
+  border-top: 1px solid #afc6d5;
+}
+.card-services .card-header {
+  border-color: #afc6d5;
+  background-color: #fff;
+  border-bottom: 0 !important;
+}
+.card-services .card-header .card-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.card-services .card-header a {
+  color: inherit;
+  display: block;
+}
+.list-group-services .list-group-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.list-group-services .list-group-item .service-name {
+  color: inherit;
+}
+.list-group-services .list-group-item .service-name:hover, .list-group-services .list-group-item .service-name:focus {
+  color: #11b89e;
+}
+.list-group-services .list-group-item .more-link {
+  color: #1b66d6;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.list-group-services .list-group-item .more-link:hover, .list-group-services .list-group-item .more-link:focus {
+  color: #11b89e;
 }
 .page .footer-top {
   background: #0b182c;
