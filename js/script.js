@@ -322,13 +322,13 @@ $( document ).ready(function() {
     center: false,
     responsive : {
       0 : {
-        items: 2,
+        items: 1,
         nav: true,
         loop: true,
         center: true,
       },
       480 : {
-        items: 2,
+        items: 1,
       },
       768 : {
         items: 2,
