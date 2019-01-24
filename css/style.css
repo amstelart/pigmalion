@@ -5518,13 +5518,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #11b89e;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06428059797704908.png);
+  background-image: url(../img/sprite-040895010065773385.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06428059797704908.png);
+  background-image: url(../img/sprite-040895010065773385.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6741,7 +6741,6 @@ a.text-dark:hover, a.text-dark:focus {
   color: #000;
   padding: .7rem 1.75rem;
   font-size: 14px;
-  font-weight: 600;
   margin-bottom: 0;
   position: relative;
 }
