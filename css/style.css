@@ -5493,12 +5493,20 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 22px;
   padding-bottom: 75px;
 }
+.page-footer .footer-top .d-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .page-footer .footer-bottom {
   padding-top: 1rem;
   font-size: 14px;
 }
 .page-footer .footer-bottom p, .page-footer .footer-bottom a {
   color: #c0c0c0;
+}
+.page-footer .footer-bottom .d-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .page-footer .footer-nav .nav-link {
   color: inherit;
@@ -5508,13 +5516,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-046422554820224526.png);
+  background-image: url(../img/sprite-05843290416943414.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-046422554820224526.png);
+  background-image: url(../img/sprite-05843290416943414.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -10172,6 +10180,37 @@ a.text-dark:hover, a.text-dark:focus {
     padding-right: 0;
     padding-left: 0;
   }
+  .intro-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro-item__body {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .intro-item__caption {
+    padding: 15px;
+  }
+  .intro-item__caption h2 {
+    font-size: 22px;
+  }
+  .intro-item__caption p {
+    font-size: 14px;
+  }
+  .intro-item__img {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .nav-pills .nav-link {
     margin-bottom: 10px;
   }
@@ -10194,6 +10233,16 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+  .page-footer .footer-nav {
+    display: none;
+  }
+  .feedback-panel {
+    height: auto;
+    padding: 40px;
+  }
+  .feedback-panel-img {
+    display: none;
   }
 }
 @media screen and (prefers-reduced-motion: reduce) {
