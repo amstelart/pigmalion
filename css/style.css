@@ -5516,13 +5516,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-031569115476095755.png);
+  background-image: url(../img/sprite-004932158746847115.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-031569115476095755.png);
+  background-image: url(../img/sprite-004932158746847115.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6408,6 +6408,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .card-price__cost {
   font-weight: 600;
+  white-space: nowrap;
+  min-width: 100px;
+  text-align: right;
 }
 .card-price--nested {
   margin-bottom: 0;
