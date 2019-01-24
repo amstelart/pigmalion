@@ -5516,13 +5516,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06607859808743808.png);
+  background-image: url(../img/sprite-09731529431176928.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06607859808743808.png);
+  background-image: url(../img/sprite-09731529431176928.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6172,7 +6172,6 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url("../img/team-card-bg.svg");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50% -500%;
