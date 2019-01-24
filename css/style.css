@@ -5516,13 +5516,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08120340602163858.png);
+  background-image: url(../img/sprite-01717259198170269.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08120340602163858.png);
+  background-image: url(../img/sprite-01717259198170269.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -10247,6 +10247,31 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .nav-pills .nav-link:not(:last-child) {
     margin-right: 0;
+  }
+  .input-group-search > .form-control,
+  .input-group-search > .custom-select,
+  .input-group-search > .input-group-append {
+    width: 100%;
+    border-radius: 0;
+  }
+  .input-group-search .form-control {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+  }
+  .input-group-search .custom-select {
+    margin-top: -1px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .input-group-search .input-group-append {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .input-group-search .input-group-append .btn {
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
   }
 }
 @media (max-width: 1199.98px) {
