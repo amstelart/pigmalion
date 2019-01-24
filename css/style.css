@@ -5508,13 +5508,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06294606277283259.png);
+  background-image: url(../img/sprite-046422554820224526.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06294606277283259.png);
+  background-image: url(../img/sprite-046422554820224526.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6316,6 +6316,18 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .page-content__header-line .page-heading {
   font-weight: 400;
+}
+.page-content__header-line .page-heading--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.page-content__header-line .page-heading--icon .heading-icon {
+  fill: #1b66d6;
+  margin-right: 10px;
 }
 .page-content__header-line .heading-flex {
   display: -webkit-box;
