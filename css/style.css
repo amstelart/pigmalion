@@ -5518,13 +5518,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #11b89e;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-04570643511305108.png);
+  background-image: url(../img/sprite-013836282409419187.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-04570643511305108.png);
+  background-image: url(../img/sprite-013836282409419187.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6389,6 +6389,7 @@ a.text-dark:hover, a.text-dark:focus {
 .card-price {
   border-color: #afc6d5;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .card-price .card-body {
   border-top: 1px solid #afc6d5;
@@ -6481,6 +6482,7 @@ a.text-dark:hover, a.text-dark:focus {
 .card-services {
   border-color: #afc6d5;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .card-services .card-body {
   border-top: 1px solid #afc6d5;
