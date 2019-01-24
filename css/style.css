@@ -5516,13 +5516,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-05843290416943414.png);
+  background-image: url(../img/sprite-06607859808743808.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-05843290416943414.png);
+  background-image: url(../img/sprite-06607859808743808.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -10210,6 +10210,15 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .section-header .h1 {
+    font-size: 24px;
+  }
+  .feedback-panel .h1 {
+    font-size: 24px;
+  }
+  .feedback-panel p {
+    font-size: 14px;
   }
   .nav-pills .nav-link {
     margin-bottom: 10px;
