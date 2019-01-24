@@ -5516,13 +5516,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #124692;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-04254986927755471.png);
+  background-image: url(../img/sprite-0016030518442407216.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-04254986927755471.png);
+  background-image: url(../img/sprite-0016030518442407216.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6175,12 +6175,20 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 50% -500%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team-card__img img {
   max-width: 100%;
   width: auto !important;
   height: auto;
-  margin: auto;
   display: block;
 }
 .team-card__body h5 {
