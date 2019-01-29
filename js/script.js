@@ -292,21 +292,42 @@ $( document ).ready(function() {
   $(".phone-mask").mask("+7(999) 999-9999");
   $(".time-mask").mask("99:99");
 
-  if(window.matchMedia('(min-width: 992px)').matches)
-  {
-    $(window).scroll(function() {
-      if ($(window).scrollTop() >= 200) {
-        $('.header-nav').addClass('header-nav--sticky');
-      } else {
-        $('.header-nav').removeClass('header-nav--sticky');
-      }
-    });
-  };
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= 200) {
+      $('.custom-nav').addClass('custom-nav--sticky');
+    } else {
+      $('.custom-nav').removeClass('custom-nav--sticky');
+    }
+  });
 
-  $("#home-intro-carousel").owlCarousel({
+  // var mainSlider = $('#home-intro-carousel');
+  // mainSlider.owlCarousel({
+  //   items: 1,
+  //   nav: true,
+  //   navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+  //   margin: 0,
+  //   loop: false,
+  //   dots: false,
+  //   center: false,
+  //   onInitialized: function(e) {
+  //     $('.counter-out').text('1 / ' + this.items().length)
+  //     console.log();
+  //   }
+  // });
+  // mainSlider.on('changed.owl.carousel', function(e) {
+  //   $('.counter-out').text(++e.page.index  + ' / ' + e.page.count)
+  // });
+
+  $('#home-intro-carousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+    if (!e.namespace) {
+      return;
+    }
+    var carousel = e.relatedTarget;
+    $('.counter-out').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+  }).owlCarousel({
     items: 1,
     nav: true,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #1b66d6;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #1b66d6;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
     margin: 0,
     loop: true,
     dots: false,
@@ -316,7 +337,7 @@ $( document ).ready(function() {
   $(".team-carousel").owlCarousel({
     items: 4,
     nav: true,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #1b66d6;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #1b66d6;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
     margin: 30,
     loop: true,
     dots: false,
@@ -349,7 +370,7 @@ $( document ).ready(function() {
   $(".gallery-carousel").owlCarousel({
     items: 4,
     nav: true,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #1b66d6;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #1b66d6;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
     margin: 30,
     loop: true,
     dots: true,

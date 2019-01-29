@@ -59,7 +59,7 @@
             <a href="tel:+78002009534" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
           </div>
           <div class="header-info__sign-up">
-            <a class="btn btn-outline-secondary" href="#"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
+            <a class="btn btn-outline-secondary" href="#submitApplication" data-toggle="modal"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
           </div>
         </div>
       </div>
@@ -67,6 +67,11 @@
 
     <nav class="navbar navbar-expand-lg custom-nav">
 
+      <a href="index.html" class="logo">
+        <h1 class="logo__text">Пигмалион</h1>
+        <p class="logo__text-sub">Медицинский центр</p>
+      </a>
+      <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown dropdown-direction">
@@ -128,12 +133,6 @@
           <div class="col-xl-9">
             <div class="input-group input-group-search mb-2">
               <input type="text" class="form-control search-form__input" placeholder="Поиск по услугам" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Выбор направления</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button" id="button-addon2">Поиск</button>
               </div>
@@ -354,6 +353,7 @@
       </div>
     </div>
   </footer>
+  <a href="#" class="to-top" id="toTop">↑</a>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

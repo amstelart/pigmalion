@@ -44,6 +44,10 @@
 </head>
 
 <body>
+  <div style="position: fixed;z-index:999;right:0;bottom:0;background: #fff;padding: 0.5em; font-size: 14px;">
+    <a href="#submitApplication" data-toggle="modal">Онлайн-запись</a>,
+    <a href="#question" data-toggle="modal">Задать вопрос</a>
+  </div>
 
   <header class="page-header">
     <div class="top-header">
@@ -59,7 +63,7 @@
             <a href="tel:+78002009534" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
           </div>
           <div class="header-info__sign-up">
-            <a class="btn btn-outline-secondary" href="#"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
+            <a class="btn btn-outline-secondary" href="#submitApplication" data-toggle="modal"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
           </div>
         </div>
       </div>
@@ -67,6 +71,11 @@
 
     <nav class="navbar navbar-expand-lg custom-nav">
 
+      <a href="index.html" class="logo">
+        <h1 class="logo__text">Пигмалион</h1>
+        <p class="logo__text-sub">Медицинский центр</p>
+      </a>
+      <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown dropdown-direction">
@@ -116,6 +125,7 @@
         <div class="intro-item">
           <div class="intro-item__body">
             <div class="intro-item__caption">
+              <div class="counter-out"></div>
               <h2 class="display-1">Комплексное решение для здоровья</h2>
               <p>При оплате услуг на стоимость от 3000 рублей вы получаете в подарок консультацию у ЛОРа</p>
               <p><a href="#" class="btn btn-primary">Подробнее</a></p>
@@ -127,6 +137,7 @@
         <div class="intro-item">
           <div class="intro-item__body">
             <div class="intro-item__caption">
+              <div class="counter-out"></div>
               <h2 class="display-1">Комплексное решение для здоровья</h2>
               <p>При оплате услуг на стоимость от 3000 рублей вы получаете в подарок консультацию у ЛОРа</p>
               <p><a href="#" class="btn btn-primary">Подробнее</a></p>
@@ -138,6 +149,7 @@
         <div class="intro-item">
           <div class="intro-item__body">
             <div class="intro-item__caption">
+              <div class="counter-out"></div>
               <h2 class="display-1">Комплексное решение для здоровья</h2>
               <p>При оплате услуг на стоимость от 3000 рублей вы получаете в подарок консультацию у ЛОРа</p>
               <p><a href="#" class="btn btn-primary">Подробнее</a></p>
@@ -346,7 +358,7 @@
         <div class="feedback-panel">
           <div class="feedback-panel-img"></div>
           <h2 class="h1 font-weight-normal">Остались вопросы?</h2>
-          <p>Позвоните по номеру +7 (4712) 52 99 65 или оставьте заявку и наши менеджеры перезвонят вам</p>
+          <p class="feedback-panel-text">Позвоните по номеру +7 (4712) 52 99 65 или оставьте заявку и наши менеджеры перезвонят вам</p>
           <form action="" class="feedback-form">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Имя">
@@ -395,6 +407,90 @@
       </div>
     </div>
   </footer>
+  <a href="#" class="to-top" id="toTop">↑</a>
+
+  
+  <!-- modal отзывы -->
+  <div class="modal fade" id="submitApplication" tabindex="-1" role="dialog" aria-labelledby="submitApplication" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="submitApplicationlLabel">Онлайн-запись</h3>
+          <p class="modal-sub-title">Оставьте заявку, наш администратор перезвонит вам и уточнит детали для записи</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Комментарии к заявке*" rows="5"></textarea>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить заявку</button>
+            </div>
+            <div class="form-group">
+              <p class="form-group-text">* — необязательное поле</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl3">
+                <label class="custom-control-label" for="customControl3">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal question -->
+  <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="question" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="questionLabel">Задать вопрос</h3>
+          <p class="modal-sub-title">Оставьте вопрос и наши специалисты развернуто ответят на него</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Текст вопроса" rows="5"></textarea>
+            </div>
+            <div class="custom-file mb-2">
+              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label" for="inputGroupFile01"><svg width="15" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#custom-file-icon"></use></svg> <span>Прикрепить файл</span></label>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить вопрос</button>
+            </div>
+            <div class="form-group">
+              <p class="form-group-text">* — необязательное поле</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl3">
+                <label class="custom-control-label" for="customControl3">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

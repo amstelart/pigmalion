@@ -59,7 +59,7 @@
             <a href="tel:+78002009534" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
           </div>
           <div class="header-info__sign-up">
-            <a class="btn btn-outline-secondary" href="#"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
+            <a class="btn btn-outline-secondary" href="#submitApplication" data-toggle="modal"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
           </div>
         </div>
       </div>
@@ -67,6 +67,11 @@
 
     <nav class="navbar navbar-expand-lg custom-nav">
 
+      <a href="index.html" class="logo">
+        <h1 class="logo__text">Пигмалион</h1>
+        <p class="logo__text-sub">Медицинский центр</p>
+      </a>
+      <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown dropdown-direction">
@@ -237,26 +242,45 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam perferendis, fugit corporis illo, quae mollitia eligendi ad voluptatum necessitatibus, excepturi tenetur! Voluptates natus nisi tenetur illo, expedita, porro deleniti repellendus, neque fugit nulla soluta nihil. Laboriosam nihil tempore ex, quas veritatis, corporis corrupti, voluptatibus dolor dicta sint eveniet! Corporis, modi repellendus odit. Natus nobis quia est debitis ex impedit, unde ab dolor exercitationem labore modi ipsa nesciunt suscipit, numquam perspiciatis totam molestias magnam iusto placeat. Nulla, enim nemo. Excepturi ea dicta, laboriosam voluptatum inventore harum, autem veritatis officiis unde saepe expedita, modi ipsam quaerat. Necessitatibus nemo nulla cupiditate obcaecati fugit.</p>
               </div>
               <div class="tab-pane fade" id="pills-photo" role="tabpanel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quidem, impedit autem nemo explicabo quam, similique praesentium dicta, tempore deleniti magni, nesciunt laboriosam vitae sint placeat rerum delectus a veniam. Atque nisi quia, sint maiores perferendis culpa possimus expedita, nobis inventore modi tempora a praesentium obcaecati delectus debitis necessitatibus quidem. Harum, nesciunt! Ab, quaerat, voluptatum rem sapiente tempore numquam molestias, dolorum illum obcaecati error mollitia iste impedit. Vitae eius, mollitia inventore incidunt officia repellendus doloribus recusandae, eum, illum hic, vero eligendi modi repellat animi quod dolor quisquam! Est quis distinctio repudiandae optio, officiis nihil a placeat eligendi, ea inventore eos.</p>
+                <div class="row">
+                  <div class="col-6 col-md-4 mb-3">
+                    <a class="gallery-item" href="img/img-content-01.jpg" data-fancybox="tab-gallery">
+                      <img src="img/img-content-01.jpg" class="img-fluid rounded" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4 mb-3">
+                    <a class="gallery-item" href="img/img-content-01.jpg" data-fancybox="tab-gallery">
+                      <img src="img/img-content-01.jpg" class="img-fluid rounded" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4 mb-3">
+                    <a class="gallery-item" href="img/img-content-01.jpg" data-fancybox="tab-gallery">
+                      <img src="img/img-content-01.jpg" class="img-fluid rounded" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4 mb-3">
+                    <a class="gallery-item" href="img/img-content-01.jpg" data-fancybox="tab-gallery">
+                      <img src="img/img-content-01.jpg" class="img-fluid rounded" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4 mb-3">
+                    <a class="gallery-item" href="img/img-content-01.jpg" data-fancybox="tab-gallery">
+                      <img src="img/img-content-01.jpg" class="img-fluid rounded" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-4 mb-3">
+                    <a class="gallery-item" href="img/img-content-01.jpg" data-fancybox="tab-gallery">
+                      <img src="img/img-content-01.jpg" class="img-fluid rounded" alt="...">
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="page-sign-up">
               <h3 class="text-center page-sign-up__title">Записаться на услугу</h3>
               <p class="text-center page-sign-up__text">Позвоните по номеру +7 (4712) 52 99 65 или оставьте заявку и наши менеджеры перезвонят вам</p>
-              <form action="" class="page-sign-up__form">
-                <div class="form-row">
-                  <div class="form-group col-lg-4">
-                    <input type="text" class="form-control" placeholder="Имя" id="inputName">
-                  </div>
-                  <div class="form-group col-lg-4">
-                    <input type="text" class="form-control phone-mask" placeholder="Телефон" id="inputPhone">
-                  </div>
-                  <div class="form-group col-lg-4">
-                    <button type="submit" class="btn btn-block btn-primary">Записаться на услугу</button>
-                  </div>
-                </div>
-              </form>
+              <p class="text-center"><a href="#submitApplication" data-toggle="modal" class="btn btn-primary">Записаться на услугу</a></p>
             </div>
 
           </div>
@@ -295,6 +319,90 @@
       </div>
     </div>
   </footer>
+  <a href="#" class="to-top" id="toTop">↑</a>
+
+  
+  <!-- modal отзывы -->
+  <div class="modal fade" id="submitApplication" tabindex="-1" role="dialog" aria-labelledby="submitApplication" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="submitApplicationlLabel">Онлайн-запись</h3>
+          <p class="modal-sub-title">Оставьте заявку, наш администратор перезвонит вам и уточнит детали для записи</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Комментарии к заявке*" rows="5"></textarea>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить заявку</button>
+            </div>
+            <div class="form-group">
+              <p class="form-group-text">* — необязательное поле</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl3">
+                <label class="custom-control-label" for="customControl3">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal question -->
+  <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="question" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="questionLabel">Задать вопрос</h3>
+          <p class="modal-sub-title">Оставьте вопрос и наши специалисты развернуто ответят на него</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Текст вопроса" rows="5"></textarea>
+            </div>
+            <div class="custom-file mb-2">
+              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label" for="inputGroupFile01"><svg width="15" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#custom-file-icon"></use></svg> <span>Прикрепить файл</span></label>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить вопрос</button>
+            </div>
+            <div class="form-group">
+              <p class="form-group-text">* — необязательное поле</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl3">
+                <label class="custom-control-label" for="customControl3">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
