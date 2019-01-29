@@ -293,7 +293,7 @@ $( document ).ready(function() {
   $(".time-mask").mask("99:99");
 
   $(window).scroll(function() {
-    if ($(window).scrollTop() >= 200) {
+    if ($(window).scrollTop() >= 155) {
       $('.custom-nav').addClass('custom-nav--sticky');
     } else {
       $('.custom-nav').removeClass('custom-nav--sticky');
