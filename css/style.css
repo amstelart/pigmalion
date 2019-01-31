@@ -5520,13 +5520,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #11b89e;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-012398983386611961.png);
+  background-image: url(../img/sprite-09604975785423071.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-012398983386611961.png);
+  background-image: url(../img/sprite-09604975785423071.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6173,8 +6173,8 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   z-index: 20;
   background: #fff;
-  -webkit-animation: slideInDown 1s 1 ease-in-out;
-          animation: slideInDown 1s 1 ease-in-out;
+  -webkit-animation: slideInDown 0.5s 1 ease-in-out;
+          animation: slideInDown 0.5s 1 ease-in-out;
   -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.29);
           box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.29);
 }
@@ -6316,7 +6316,7 @@ a.text-dark:hover, a.text-dark:focus {
 .intro-item__caption {
   max-width: 565px;
   padding-right: 125px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .intro-item__caption h2 {
   margin-bottom: 30px;
@@ -10648,6 +10648,12 @@ a.text-dark:hover, a.text-dark:focus {
     max-width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .page-header .header-info__contacts .item:not(:first-child) {
+    display: none;
+  }
+  .page-header .header-info__sign-up {
+    display: none;
   }
   .section-header .h1 {
     font-size: 24px;
