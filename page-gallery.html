@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="no-js page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Пигмалион</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="top-header">
+      <div class="container-fluid">
+        <a href="index.html" class="logo">
+          <h1 class="logo__text">Пигмалион</h1>
+          <p class="logo__text-sub">Медицинский центр</p>
+        </a>
+        <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span></span></button>
+        <div class="header-info">
+          <div class="header-info__contacts">
+            <a href="tel:+74712529965" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
+            <a href="tel:+78002009534" class="item"><svg width="11" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>+7 (4712) 52 99 65</a>
+          </div>
+          <div class="header-info__sign-up">
+            <a class="btn btn-outline-secondary" href="#submitApplication" data-toggle="modal"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-sign-up"></use></svg>Онлайн-запись</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg custom-nav">
+
+      <a href="index.html" class="logo">
+        <h1 class="logo__text">Пигмалион</h1>
+        <p class="logo__text-sub">Медицинский центр</p>
+      </a>
+      <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown dropdown-direction">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownDirectionMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="dropdown-burger"><span></span></div>
+              Направления
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownDirectionMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="page-price.html">Цены</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-team.html">Специалисты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-reviews.html">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-gallery.html">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-about.html">О клинике</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-cantacts.html">Контакты</a>
+          </li>
+        </ul>
+        <form class="form-inline search-form page-header__search">
+          <input class="form-control search-form__input" type="search" placeholder="Поиск услуг" aria-label="Search">
+          <!-- <button class="btn my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="page-content" role="main">
+
+    <!-- Start content__wrap -->
+    <div class="page-content__wrap">
+      <div class="page-content__header-line">
+        <div class="container">
+          <nav class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Галерея</li>
+            </ol>
+          </nav>
+          <h1 class="page-heading">Галерея</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="gallery-grid row">
+          <div class="col-lg-4 col-sm-6">
+            <a href="page-gallery--item.html" class="gallery-album">
+              <div class="gallery-album__inner">
+                <div class="gallery-album__img">
+                  <img src="img/gallery-img-01.jpg" alt="">
+                </div>
+                <div class="gallery-album__overlay"></div>
+                <div class="gallery-album__caption">
+                  <i class="icon"></i>
+                  <span>20 фотографий</span>
+                </div>
+              </div>
+              <span class="gallery-album__title">Название альбома</span>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="page-gallery--item.html" class="gallery-album">
+              <div class="gallery-album__inner">
+                <div class="gallery-album__img">
+                  <img src="img/gallery-img-02.jpg" alt="">
+                </div>
+                <div class="gallery-album__overlay"></div>
+                <div class="gallery-album__caption">
+                  <i class="icon"></i>
+                  <span>20 фотографий</span>
+                </div>
+              </div>
+              <span class="gallery-album__title">Название альбома</span>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="page-gallery--item.html" class="gallery-album">
+              <div class="gallery-album__inner">
+                <div class="gallery-album__img">
+                  <img src="img/gallery-img-03.jpg" alt="">
+                </div>
+                <div class="gallery-album__overlay"></div>
+                <div class="gallery-album__caption">
+                  <i class="icon"></i>
+                  <span>20 фотографий</span>
+                </div>
+              </div>
+              <span class="gallery-album__title">Название альбома</span>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="page-gallery--item.html" class="gallery-album">
+              <div class="gallery-album__inner">
+                <div class="gallery-album__img">
+                  <img src="img/gallery-img-04.jpg" alt="">
+                </div>
+                <div class="gallery-album__overlay"></div>
+                <div class="gallery-album__caption">
+                  <i class="icon"></i>
+                  <span>20 фотографий</span>
+                </div>
+              </div>
+              <span class="gallery-album__title">Название альбома</span>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="page-gallery--item.html" class="gallery-album">
+              <div class="gallery-album__inner">
+                <div class="gallery-album__img">
+                  <img src="img/gallery-img-05.jpg" alt="">
+                </div>
+                <div class="gallery-album__overlay"></div>
+                <div class="gallery-album__caption">
+                  <i class="icon"></i>
+                  <span>20 фотографий</span>
+                </div>
+              </div>
+              <span class="gallery-album__title">Название альбома</span>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="page-gallery--item.html" class="gallery-album">
+              <div class="gallery-album__inner">
+                <div class="gallery-album__img">
+                  <img src="img/gallery-img-06.jpg" alt="">
+                </div>
+                <div class="gallery-album__overlay"></div>
+                <div class="gallery-album__caption">
+                  <i class="icon"></i>
+                  <span>20 фотографий</span>
+                </div>
+              </div>
+              <span class="gallery-album__title">Название альбома</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End content__wrap -->
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <a href="index.html" class="logo">
+            <h1 class="logo__text">Пигмалион</h1>
+            <p class="logo__text-sub">Медицинский центр</p>
+          </a>
+          <nav class="nav footer-nav">
+            <a class="nav-link active" href="#">Косметология</a>
+            <a class="nav-link" href="#">Лор</a>
+            <a class="nav-link" href="#">Хирургия</a>
+            <a class="nav-link" href="#">Онкология</a>
+            <a class="nav-link" href="#">Травмотология и ортопедия</a>
+            <a class="nav-link" href="#">Перманентный макияж</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <p>Медицинский центр «Пимгмалион» 2018</p>
+          <p><a href="#">Разработано в Showbiz</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="to-top" id="toTop">↑</a>
+
+  
+  <!-- modal отзывы -->
+  <div class="modal fade" id="submitApplication" tabindex="-1" role="dialog" aria-labelledby="submitApplication" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="submitApplicationlLabel">Онлайн-запись</h3>
+          <p class="modal-sub-title">Оставьте заявку, наш администратор перезвонит вам и уточнит детали для записи</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Комментарии к заявке*" rows="5"></textarea>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить заявку</button>
+            </div>
+            <div class="form-group">
+              <p class="form-group-text">* — необязательное поле</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl1">
+                <label class="custom-control-label" for="customControl1">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal question -->
+  <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="question" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="questionLabel">Задать вопрос</h3>
+          <p class="modal-sub-title">Оставьте вопрос и наши специалисты развернуто ответят на него</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Текст вопроса" rows="5"></textarea>
+            </div>
+            <div class="custom-file mb-2">
+              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label" for="inputGroupFile01"><svg width="15" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#custom-file-icon"></use></svg> <span>Прикрепить файл</span></label>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить вопрос</button>
+            </div>
+            <div class="form-group">
+              <p class="form-group-text">* — необязательное поле</p>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl2">
+                <label class="custom-control-label" for="customControl2">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal reviews -->
+  <div class="modal fade" id="reviews" tabindex="-1" role="dialog" aria-labelledby="reviews" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="reviewsLabel">Написать отзыв</h3>
+          <p class="modal-sub-title">Оставьте отзыв, мы обязательно рассмотрим его</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control phone-mask" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Ваш отзыв" rows="5"></textarea>
+            </div>
+            <div class="form-group text-lg-center mb-2">
+              <button type="submit" class="btn btn-form btn-secondary">Отправить отзыв</button>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customControl2">
+                <label class="custom-control-label" for="customControl2">Я соглашаюсь с</label>
+                <a href="#">условиями обработки данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/ofi.js"></script>
+  <script src="js/isMobile.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
