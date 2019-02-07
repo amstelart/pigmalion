@@ -5569,13 +5569,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #11b89e;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06695984167625246.png);
+  background-image: url(../img/sprite-06359909798500307.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06695984167625246.png);
+  background-image: url(../img/sprite-06359909798500307.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6768,6 +6768,14 @@ a.text-dark:hover, a.text-dark:focus {
 .page-heading {
   font-weight: 400;
 }
+.page-heading-link {
+  text-decoration: underline;
+  padding: 0.5rem 0;
+  font-size: 14px;
+}
+.page-heading-link:hover, .page-heading-link:focus {
+  text-decoration: none;
+}
 .breadcrumb {
   font-size: 14px;
 }
@@ -6912,16 +6920,24 @@ a.text-dark:hover, a.text-dark:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 1.1rem 1.75rem;
 }
 .list-group-services .list-group-item .service-name {
   color: inherit;
+  margin-right: auto;
 }
 .list-group-services .list-group-item .service-name:hover, .list-group-services .list-group-item .service-name:focus {
   color: #11b89e;
+}
+.list-group-services .list-group-item .more-link-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 15px;
 }
 .list-group-services .list-group-item .more-link {
   color: #1b66d6;
@@ -6932,6 +6948,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .list-group-services .list-group-item .more-link:hover, .list-group-services .list-group-item .more-link:focus {
   color: #11b89e;
+}
+.list-group-services .list-group-item .more-link:first-child {
+  margin-left: 0;
 }
 .page .footer-top {
   background: #0b182c;
@@ -11118,5 +11137,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .page-content__header-line .page-heading {
     font-size: 24px;
+  }
+  .list-group-services .list-group-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-group-services .list-group-item .service-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .list-group-services .list-group-item .more-link-group {
+    margin-left: 0;
   }
 }
